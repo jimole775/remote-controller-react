@@ -1,0 +1,93 @@
+html{
+    font-size:75%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  }
+  
+  .App {
+    text-align: center;
+  }
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
+  }
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  .App-link {
+    color: #61dafb;
+  }
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+#prevLoad {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background: rgb(33, 78, 119);
+    z-index: 999999;
+    color: #fff;
+    transition: 0.5s opacity linear;
+    -moz-transition: 0.5s opacity linear;
+    -webkit-transition: 0.5s opacity linear;
+}
+
+#prevLoad .loadBar {
+    width: 80%;
+    height: auto;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    transition: 10s opacity linear;
+    -moz-transition: 10s opacity linear;
+    -webkit-transition: 10s opacity linear;
+}
+
+#prevLoad .filler {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 0;
+    display: block;
+    background: #fff;
+    left: 0;
+    top: 0;
+    transition: 10s opacity linear;
+    -moz-transition: 10s opacity linear;
+    -webkit-transition: 10s opacity linear;
+}
+
+#prevLoad p.loadingText {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    /* font-size: 0.7rem; */
+    line-height: 200%;
+}
