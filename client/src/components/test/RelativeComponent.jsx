@@ -10,15 +10,13 @@ class Son extends React.Component{
     }
     render(){
          return (
-             <input type="button" value="点击" onClick={(e) => this.handleClick(e)}/> 
+             <input type="button" value="修改子组件内容" onClick={(e) => this.handleClick(e)}/> 
          )
     }
-
     handleClick(e){
         console.log(this.props);
         this.props.emitEvent("son");
     }
-
 }
 
 @HighOrderComponent
@@ -29,10 +27,8 @@ class Father extends React.Component{
             title:"father page",
             name:"father",
             getData:(data) => {
-                console.log("i'm been changed!",this);
-                
+                console.log("i'm been changed!",this);                
                 this.setState({name:"son"})
-
             },
             comps:[]
         };
@@ -50,7 +46,6 @@ class Father extends React.Component{
         });               
     }
     render(){
-        // const NewSon = HC(Son);
         return (
             <div>
                 <Son emitEvent={this.state.getData}/>

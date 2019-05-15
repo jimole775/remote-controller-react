@@ -1,13 +1,12 @@
-
 import React from "react";
-class NotFound extends React.Component{ 
+class Login extends React.Component{ 
     constructor(props){
         super(props);
         console.log(props);
     }
     render(){
-        return (<div>your page has not found</div>)
+        return (<div>you never login, done it now!</div>)
     }
 }
 
-export default NotFound;
+export default Login;

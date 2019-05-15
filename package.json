@@ -8,8 +8,9 @@
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0"
   },
-  "scripts": {
-    
+  "scripts": {    
+    "dll": "webpack --display-modules --colors --config ./build/webpack.client.dll.js",
+    "dev": "webpack --config ./build/webpack.base.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -58,6 +59,7 @@
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.30.0",
+    "webpack-cli": "^3.2.1",
     "webpack-stream": "^5.2.1"
   },
   "babel": {
