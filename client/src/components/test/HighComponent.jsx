@@ -12,7 +12,7 @@ export default function(WrapComponent){
 
             return (
                 <div>
-                    <span>新增的东西</span>
+                    <span>高阶组件新增内容</span>
                     <WrapComponent {...this.props} {...this.newProps}/>
                 </div> 
             )
